@@ -6,6 +6,27 @@
   padding: 0;
 }
 
+h2{
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.953rem;
+  letter-spacing: -0.02rem;
+  line-height: 1.2;
+}
+
 main {
   display: block;
   background-color: #1111;
@@ -90,3 +111,214 @@ h1 {
   color: white;
   background-color: grey;
 }
+
+.productlist article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.productlist main {
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(150px, 290px));
+  gap: 2rem;
+}
+
+h3{
+  font-size: 20px;
+  color: white;
+}
+
+.productlist main h2{
+  grid-column: 1/-1;
+  color: white;
+}
+
+.productlist article .discounted {
+  display: none;
+}
+
+.productlist article.onSale .discounted {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productlist article>* {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.discounted p:last-child {
+  background: crimson;
+  padding: 0.2rem;
+}
+
+.discounted>p {
+  margin-bottom: 0;
+}
+
+.productlist article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: grey;
+  color: black;
+  padding: 1rem;
+}
+
+.productlist article.soldOut img {
+  opacity: 0.5;
+}
+
+
+
+.product main .breadcrumbs{
+  grid-column: 1/-1;
+}
+.product main{
+  display: grid;
+}
+
+
+/* .breadcrumbs{
+  display: none;
+}
+
+ol,ul{
+  padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 1.563rem;
+}
+li{
+  list-style-position: inside;
+}
+
+ol {
+  list-style: decimal outside;
+}
+
+@media screen and(min-width:900px) {
+  .breadcrumbs{
+    display: flex;
+    font-size: 0.8rem;
+    list-style-type: none;
+
+  }
+
+    .breadcrumbs li::after {
+      content: " > ";
+      font-size: 0.6rem;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 10px;
+      transition: all 0.3s;
+    }
+
+        .breadcrumbs li:last-child::after {
+          background: none;
+          content: "";
+        }
+  
+}
+
+
+
+@media  screen and (mind-width: 900px) {
+  .breadcrumbs li::after{
+      content: " > ";
+        font-size: 0.6rem;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+        transition: all 0.3s;
+  
+}
+} */
+
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #111;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  color: grey;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: crimson;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.purchaseBox form label{
+  gap: 1rem;
+}
+
+.purchaseBox{
+  background: grey;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+}
+
+.product select{
+  min-width: 100px;
+}
+
+.product main .breadcrumb, .product main img{
+  grid-column: 1/-1;
+}
+
+.info{
+  padding: 1rem;
+}
+
+
+@media screen and (min-width: 900px){
+  .purchaseBox{
+    order: 2;
+    transform: translate(-50px, -100px);
+  }
+
+    .product main {
+      grid-template-columns: 1fr 310px;
+    }
+
+    .info {
+      order: 0;
+    }
+  
+}
+
+
+
+
