@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+main {
+  display: block;
+}
+
+.mainNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainNav > a {
+  display: block;
+  text-decoration: none;
+}
+
+.mainNav > * {
+  display: block;
+}
+
+.mainNav h1 {
+  margin: auto;
+}
+
+.categoryList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.categoryList a {
+  padding: 2em;
+  text-decoration: none;
+}
