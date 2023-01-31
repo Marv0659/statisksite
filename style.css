@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -6,17 +8,33 @@
 
 main {
   display: block;
+  background-color: #1111;
+}
+
+body {
+  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+  background-color: #111;
 }
 
 .mainNav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+  gap: 20%;
 }
 
 .mainNav > a {
   display: block;
   text-decoration: none;
+}
+.mainNav a {
+  text-decoration: none;
+  color: white;
+}
+
+.mainNav a:hover {
+  color: grey;
 }
 
 .mainNav > * {
@@ -25,6 +43,10 @@ main {
 
 .mainNav h1 {
   margin: auto;
+  color: white;
+}
+.mainNav span {
+  color: crimson;
 }
 
 .categoryList {
@@ -36,4 +58,35 @@ main {
 .categoryList a {
   padding: 2em;
   text-decoration: none;
+}
+
+.mainUl li {
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+.mainUl a {
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.mainUl a:hover {
+  color: grey;
+}
+
+.categoryList a {
+  text-decoration: none;
+  color: white;
+  background-color: grey;
 }
