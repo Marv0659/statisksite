@@ -27,6 +27,8 @@ function showProduct(product) {
   copy.querySelector("span").textContent = product.price;
   copy.querySelector("div h4 span").textContent = product.discount;
   copy.querySelector("a").href = "product.html?id=" + product.id;
+  copy.querySelector(".smallProduct .subtle").textContent = product.articletype;
+  //copy.querySelector(".smallProduct .subtle .tshirtType").textContent = product.brandname;
 
   if (product.soldout) {
     copy.querySelector("article").classList.add("soldOut");

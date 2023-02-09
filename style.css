@@ -8,6 +8,7 @@
 
 h2{
   font-size: 2rem;
+  color: white;
 }
 
 h1,
@@ -35,6 +36,10 @@ main {
 body {
   margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
   background-color: #111;
+}
+
+dl {
+  color: white;
 }
 
 .mainNav {
